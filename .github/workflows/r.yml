@@ -32,6 +32,7 @@ jobs:
           r-version: ${{ matrix.r-version }}
       - name: Install dependencies
         run: |
+          Sys.unsetenv("GITHUB_PAT")
           install.packages("devtools")
           devtools::install_github("lemaslab/hmdbtaxonomy")
           library(hmdbtaxonomy)
