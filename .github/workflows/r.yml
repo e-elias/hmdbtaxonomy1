@@ -34,8 +34,8 @@ jobs:
         run: |
           Sys.unsetenv("GITHUB_PAT")
           install.packages("devtools")
-          devtools::install_github("lemaslab/hmdbtaxonomy")
-          library(hmdbtaxonomy)
+#devtools::install_github("lemaslab/hmdbtaxonomy")
+#library(hmdbtaxonomy)
 # install.packages(c("remotes", "rcmdcheck"))
 # remotes::install_deps(dependencies = TRUE)
         shell: Rscript {0}
